@@ -1,3 +1,14 @@
+const boardHTML = document.querySelector('.board');
+for(let i = 0; i < 9; i++){
+    const choiceHTML = document.createElement('div');
+    choiceHTML.className = "choice";
+    const imgHTML = document.createElement('img');
+    imgHTML.src = "blank.png";
+    imgHTML.alt = "choice";
+    choiceHTML.appendChild(imgHTML);
+    boardHTML.appendChild(choiceHTML);
+}
+
 let button = document.querySelector('button')
 let choices = Array.from(document.querySelectorAll('.choice'))
 let result = document.querySelector('.result')
